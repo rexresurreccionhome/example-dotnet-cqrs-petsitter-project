@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.1" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Query.Sitter.Domain\Query.Sitter.Domain.csproj" />
+    <ProjectReference Include="..\Query.Sitter.Infrastructure\Query.Sitter.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\Cqrs\Cqrs.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controller/" />
+    <Folder Include="DTO/" />
+    <Folder Include="Query/" />
+  </ItemGroup>
+
+</Project>

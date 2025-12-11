@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.1" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Command.Pet.Domain\Command.Pet.Domain.csproj" />
+    <ProjectReference Include="..\Command.Pet.Infrastructure\Command.Pet.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+     <InternalsVisibleTo Include="Command.Pet.Api.Tests.Integration" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+@Command.Pet.Api_HostAddress = http://localhost:5207
+
+GET {{Command.Pet.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
