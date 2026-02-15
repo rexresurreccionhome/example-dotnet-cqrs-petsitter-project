@@ -30,7 +30,7 @@ public class EventSourcingHandler : IEventSourcingHandler<PetAggregate>
             return aggregate;
         }
         aggregate.ReplayEvents(events);
-        aggregate.Version = events.Select(@event => @event.Version).Max();
+        aggregate.Version = events.Max(@event => @event.Version);
 
         return aggregate;
     }
